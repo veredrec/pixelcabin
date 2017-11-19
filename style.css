@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+/* style main content */
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+/* style left side */
+.phone {
+  border: 0.8rem solid #454747;
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2rem;
+  border-bottom: 3rem solid #454747;
+  border-top: 3rem solid #454747;
+  padding: 1rem 0;
+  position: relative;
+}
+.phone-upper-bar, .phone-lower-bar, .phone-dot {
+  background-color: #222;
+  width: 50%;
+  height: 3%;
+  position: absolute;
+  border-radius: 1rem;
+}
+.phone-upper-bar {
+  top: -2rem;
+  left: 25%;
+}
+.phone-lower-bar {
+  bottom: -2rem;
+  left: 25%;
+}
+.phone-dot {
+  width: 5%;
+  top: -2rem;
+  left: 10%;
+}
+.left-side, .right-side {
+  height: 90vh;
+}
+.logo {
+  width: 12rem;
+  margin-left: 2rem;
+}
+.left-side {
+  background-color: #b6c9f4;
+  width: 40%;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.link {
+  font-size: 1.2rem;
+  margin: 1.2rem;
+  text-decoration: none;
+  color: #FFF;
+}
+/* style right-side */
+.right-side {
+  background-color: #606880;
+  width: 60%;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  margin-left: 6rem;
+  width: 60%;
+}
+.title, .subtitle {
+  font-weight: normal;
+}
+.title {
+  font-size: 1.6rem;
+}
+.subtitle {
+  font-size: 1rem;
+}
+/* style footer */
+.footer {
+  background-color: #484c4e;
+  padding-top: 1rem;
+  height: 10vh;
+}
+.footer-text-icons {
+  display: flex;
+  justify-content: center;
+  margin: 0.8 3rem 0 3rem;
+}
+.footer-item {
+  font-size: 1rem;
+  margin-left: 5rem;
+  font-weight: bold;
+}
+.footer-text {
+  margin-right: 3rem;
+}
+.fa {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #FFF;
+  cursor: pointer;
+}
+.fa:hover {
+  color: #E1F3F3;
+}
+.fa:visited {
+  color: #CCD8D8;
+}
+/* style for smaller screens */
+@media only screen and (max-width: 1100px) and (min-width: 851px) {
+  .phone {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 651px) {
+  .phone {
+    width: 80%;
+  }
+  .footer-text-icons {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .footer-icons {
+    margin-top: 1rem;
+  }
+  .footer-item {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+  .left-side, .right-side {
+    height: 87vh;
+  }
+  .footer {
+    height: 13vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    flex-direction: column;
+  }
+  .left-side, .right-side {
+    height: 100vh;
+  }
+  .logo {
+    width: 12rem;
+    margin-left: 2rem;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .footer-text-icons {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .footer-icons {
+    margin-top: 1rem;
+  }
+  .footer-item {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+}
